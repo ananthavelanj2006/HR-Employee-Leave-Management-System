@@ -1,25 +1,3 @@
-<<<<<<< HEAD
-import logo from './logo.svg';
-import './App.css';
-
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-=======
 import React, { useState } from "react";
 import "./App.css";
 
@@ -33,18 +11,20 @@ function App() {
   ]);
 
   const addLeave = () => {
-    if (name === "" || reason === "") {
+    if (!name || !reason) {
       alert("Fill all fields");
       return;
     }
 
-    const newLeave = {
-      name,
-      reason,
-      status: "Pending"
-    };
+    setLeaves([
+      ...leaves,
+      {
+        name,
+        reason,
+        status: "Pending"
+      }
+    ]);
 
-    setLeaves([...leaves, newLeave]);
     setName("");
     setReason("");
   };
@@ -53,8 +33,6 @@ function App() {
     <div className="container">
       <h1>HR Employee Leave Management Tool</h1>
 
-      <h2>Leave History</h2>
-
       <input
         type="text"
         placeholder="Employee Name"
@@ -62,7 +40,8 @@ function App() {
         onChange={(e) => setName(e.target.value)}
       />
 
-      <br /><br />
+      <br />
+      <br />
 
       <input
         type="text"
@@ -71,20 +50,22 @@ function App() {
         onChange={(e) => setReason(e.target.value)}
       />
 
-      <br /><br />
+      <br />
+      <br />
 
       <button onClick={addLeave}>Apply Leave</button>
 
-      <br /><br />
+      <br />
+      <br />
 
       <input
         type="text"
-        placeholder="Filter Employee"
+        placeholder="Search Employee"
         value={search}
         onChange={(e) => setSearch(e.target.value)}
       />
 
-      <table>
+      <table border="1" cellPadding="10">
         <thead>
           <tr>
             <th>Employee</th>
@@ -95,8 +76,8 @@ function App() {
 
         <tbody>
           {leaves
-            .filter((item) =>
-              item.name.toLowerCase().includes(search.toLowerCase())
+            .filter((x) =>
+              x.name.toLowerCase().includes(search.toLowerCase())
             )
             .map((item, index) => (
               <tr key={index}>
@@ -107,13 +88,8 @@ function App() {
             ))}
         </tbody>
       </table>
->>>>>>> b03c3f42d609379119e02228fb1d03517f62dae2
     </div>
   );
 }
 
-<<<<<<< HEAD
 export default App;
-=======
-export default App;
->>>>>>> b03c3f42d609379119e02228fb1d03517f62dae2

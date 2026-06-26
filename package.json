@@ -1,5 +1,6 @@
 {
   "name": "hr-leave-management",
+<<<<<<< HEAD
   "version": "0.1.0",
   "private": true,
   "dependencies": {
@@ -23,6 +24,17 @@
       "react-app",
       "react-app/jest"
     ]
+=======
+  "version": "1.0.0",
+  "private": true,
+  "dependencies": {
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "react-scripts": "5.0.1"
+  },
+  "scripts": {
+    "start": "react-scripts start"
+>>>>>>> b03c3f42d609379119e02228fb1d03517f62dae2
   },
   "browserslist": {
     "production": [
@@ -36,4 +48,8 @@
       "last 1 safari version"
     ]
   }
+<<<<<<< HEAD
 }
+=======
+}
+>>>>>>> b03c3f42d609379119e02228fb1d03517f62dae2

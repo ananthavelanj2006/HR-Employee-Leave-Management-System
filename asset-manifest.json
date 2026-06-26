@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/HR-Employee-Leave-Management-System/static/css/main.f6ca29a2.css",
+    "main.js": "/HR-Employee-Leave-Management-System/static/js/main.e6fb33ef.js",
+    "static/js/453.65b2642c.chunk.js": "/HR-Employee-Leave-Management-System/static/js/453.65b2642c.chunk.js",
+    "index.html": "/HR-Employee-Leave-Management-System/index.html",
+    "main.f6ca29a2.css.map": "/HR-Employee-Leave-Management-System/static/css/main.f6ca29a2.css.map",
+    "main.e6fb33ef.js.map": "/HR-Employee-Leave-Management-System/static/js/main.e6fb33ef.js.map",
+    "453.65b2642c.chunk.js.map": "/HR-Employee-Leave-Management-System/static/js/453.65b2642c.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.f6ca29a2.css",
+    "static/js/main.e6fb33ef.js"
+  ]
+}
